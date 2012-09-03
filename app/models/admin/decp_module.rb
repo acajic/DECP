@@ -45,6 +45,7 @@ class Admin::DecpModule < ActiveRecord::Base
   def self.get_last_migration_version
     migrations = Dir.glob Rails.root.join("db", "migrate", "*")
 
+
     migration = migrations.last
     migration = File.basename(migration, ".rb")
 
@@ -52,10 +53,29 @@ class Admin::DecpModule < ActiveRecord::Base
     migration_version = parts.shift
   end
 
+  def self.get_migration_version_of_model(decp_model)
+    migrations = Dir.glob Rails.root.join("db", "migrate", "*")
+
+    migration_version = ""
+    migrations.each do |migration|
+      migration = File.basename(migration, ".rb")
+
+      unless migration.include?("create_admin_module_"+decp_model.name.downcase)
+        next
+      end
+
+      migration_version = migration.split("_").first
+      break
+    end
+
+    migration_version
+  end
+
   def self.create_full(decp_module_model)
     %x[rake db:migrate]
-    migration_version = get_last_migration_version
+    migration_version = get_migration_version_of_model decp_module_model
     decp_module_model.migration_version = migration_version
+
     decp_module_model.save
   end
 
@@ -104,7 +124,7 @@ class Admin::DecpModule < ActiveRecord::Base
         begin
           response = module_model.fetch(module_args[module_name])
         rescue Exception => e
-          response[:success]  = false
+          response[:success] = false
           response[:details] << "Modul nema implementiranu metodu za dohvat podataka -- " << module_model.name << ".fetch(). "
         end
 

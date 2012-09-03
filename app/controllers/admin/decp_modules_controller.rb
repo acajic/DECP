@@ -89,18 +89,11 @@ class Admin::DecpModulesController < ApplicationController
 
     @admin_decp_module = Admin::DecpModule.new(params[:admin_decp_module])
 
-
-    # Rails::Generators.invoke("active_record:model", ["foo"])
-
-
     gen = Rails::Generators::Base.new
-
-    #gen.run("rails destroy scaffold Admin::ModuleTemperature")
 
     command = "rails generate scaffold Admin::Module" + @admin_decp_module.name.camelcase + " "
 
     field_names = params[:fieldname]
-    field_names.delete("1")
     field_names.each_pair do |k, field_name|
       if field_name.empty?
         break

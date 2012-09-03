@@ -162,7 +162,7 @@ class CreateAdminModuleRates < ActiveRecord::Migration
       t.timestamps
     end
     add_index(:admin_module_rates, :timestamp, :unique => true)
-    Admin::DecpModule.create(:name => "rates", :description => "Currency exchange rates", :migration_version=>"20120831172434")
+    Admin::DecpModule.create(:name => "rates", :description => "Currency exchange rates", :migration_version=>"20120902230047")
   end
 
   def down
