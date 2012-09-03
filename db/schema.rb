@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120903000321) do
+ActiveRecord::Schema.define(:version => 20120903161916) do
 
   create_table "admin_decp_modules", :force => true do |t|
     t.string   "name"
@@ -186,6 +186,12 @@ ActiveRecord::Schema.define(:version => 20120903000321) do
   end
 
   add_index "admin_module_rates", ["timestamp"], :name => "index_admin_module_rates_on_timestamp", :unique => true
+
+  create_table "admin_module_sads", :force => true do |t|
+    t.string   "asd"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "admin_module_weathers", :force => true do |t|
     t.string   "city"

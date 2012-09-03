@@ -1,5 +1,7 @@
 DECP::Application.routes.draw do
 
+  namespace :admin do resources :module_sads end
+
   namespace :admin do resources :module_weathers end
 
   namespace :admin do resources :module_rates end
