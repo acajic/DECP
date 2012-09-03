@@ -22,7 +22,6 @@
         <td style="vertical-align: top;"><%= admin_decp_module.active? ? "Yes" : "No" %></td>
         <td style="vertical-align: top;"><%= link_to 'Show', admin_decp_module %></td>
         <td style="vertical-align: top;"><%= link_to 'Edit', edit_admin_decp_module_path(admin_decp_module) %></td>
-        <td style="vertical-align: top;"><%= link_to 'Destroy', admin_decp_module, confirm: 'All data from that module will be lost. Are you sure you don\'t want to simply de-activate? (Operation could take some time to complete)', method: :delete %></td>
         <td style="vertical-align: top;"><%= link_to "Fetch", :action => :fetch, :id => admin_decp_module.id %></td>
         <td style="vertical-align: top;"><%= link_to "See Records", :controller => "admin/module_#{admin_decp_module.name.pluralize}", :action => "index" %></td>
       </tr>

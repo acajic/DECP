@@ -20,3 +20,6 @@
 
 <%= link_to 'Edit', edit_admin_decp_module_path(@admin_decp_module) %> |
 <%= link_to 'Back', admin_decp_modules_path %>
+
+<br/>
+<p><%= link_to 'Destroy', @admin_decp_module, confirm: 'All data from that module will be lost. Are you sure you don\'t want to simply de-activate? (Operation could take about 30 seconds to complete)', method: :delete, :style=>'color:#FF0000;', :class => "css_class" %></p>

@@ -1,5 +1,7 @@
 class Admin::ModuleWeather < ActiveRecord::Base
 
+  validates_uniqueness_of :date, :scope => [:city, :country]
+
   def self.get_args
     args = Hash.new
     args[:city] = "Zagreb"
