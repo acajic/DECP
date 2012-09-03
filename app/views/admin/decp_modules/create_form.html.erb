@@ -61,5 +61,5 @@
 
 
     <%= submit_tag('Cancel', :onclick => "document.forms[0].action = 'index';", :notice =>"Success") %>
-    <%= submit_tag("Finish") %>
+    <%= submit_tag("Finish", :confirm => 'New module will be created along with database table and several html files. Are you sure? (Operation could take up to 30 seconds to complete)') %>
 <% end %>
