@@ -111,7 +111,7 @@ class Admin::DecpModulesController < ApplicationController
 
     gen.run command
 
-    Admin::DecpModule.create_full(:name => @admin_decp_module.name)
+    Admin::DecpModule.create_full(@admin_decp_module)
 
     respond_to do |format|
       format.html { redirect_to action: "index", notice: "Module was successfully created!" }

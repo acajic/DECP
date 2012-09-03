@@ -42,10 +42,22 @@ class Admin::DecpModule < ActiveRecord::Base
     ActiveRecord::Base.connection.execute("UPDATE admin_decp_modules SET migration_version = '" + migration_version + "' WHERE name = '" + module_name + "'")
   end
 
-  def self.create_full(hash)
-    decp_module = Admin::DecpModule.create(hash)
-    rake_result = %x[rake db:migrate]
-    decp_module.set_migration_version(hash[:name])
+  def self.get_last_migration_version
+    migrations = Dir.glob Rails.root.join("db", "migrate", "*")
+    migrations.sort
+
+    migration = migrations.last
+    migration = File.basename(migration, ".rb")
+
+    parts = migration.split("_")
+    migration_version = parts.shift
+  end
+
+  def self.create_full(decp_module_model)
+    %x[rake db:migrate]
+    migration_version = get_last_migration_version
+    decp_module_model.migration_version = migration_version
+    decp_module_model.save
   end
 
   def destroy_full
