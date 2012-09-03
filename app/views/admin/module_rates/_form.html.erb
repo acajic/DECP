@@ -1,0 +1,649 @@
+<%= form_for(@admin_module_rate) do |f| %>
+  <% if @admin_module_rate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@admin_module_rate.errors.count, "error") %> prohibited this admin_module_rate from being saved:</h2>
+
+      <ul>
+      <% @admin_module_rate.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :timestamp %><br />
+    <%= f.text_field :timestamp %>
+  </div>
+  <div class="field">
+    <%= f.label :AED %><br />
+    <%= f.text_field :AED %>
+  </div>
+  <div class="field">
+    <%= f.label :AFN %><br />
+    <%= f.text_field :AFN %>
+  </div>
+  <div class="field">
+    <%= f.label :ALL %><br />
+    <%= f.text_field :ALL %>
+  </div>
+  <div class="field">
+    <%= f.label :AMD %><br />
+    <%= f.text_field :AMD %>
+  </div>
+  <div class="field">
+    <%= f.label :ANG %><br />
+    <%= f.text_field :ANG %>
+  </div>
+  <div class="field">
+    <%= f.label :AOA %><br />
+    <%= f.text_field :AOA %>
+  </div>
+  <div class="field">
+    <%= f.label :ARS %><br />
+    <%= f.text_field :ARS %>
+  </div>
+  <div class="field">
+    <%= f.label :AUD %><br />
+    <%= f.text_field :AUD %>
+  </div>
+  <div class="field">
+    <%= f.label :AWG %><br />
+    <%= f.text_field :AWG %>
+  </div>
+  <div class="field">
+    <%= f.label :AZN %><br />
+    <%= f.text_field :AZN %>
+  </div>
+  <div class="field">
+    <%= f.label :BAM %><br />
+    <%= f.text_field :BAM %>
+  </div>
+  <div class="field">
+    <%= f.label :BBD %><br />
+    <%= f.text_field :BBD %>
+  </div>
+  <div class="field">
+    <%= f.label :BDT %><br />
+    <%= f.text_field :BDT %>
+  </div>
+  <div class="field">
+    <%= f.label :BGN %><br />
+    <%= f.text_field :BGN %>
+  </div>
+  <div class="field">
+    <%= f.label :BHD %><br />
+    <%= f.text_field :BHD %>
+  </div>
+  <div class="field">
+    <%= f.label :BIF %><br />
+    <%= f.text_field :BIF %>
+  </div>
+  <div class="field">
+    <%= f.label :BMD %><br />
+    <%= f.text_field :BMD %>
+  </div>
+  <div class="field">
+    <%= f.label :BND %><br />
+    <%= f.text_field :BND %>
+  </div>
+  <div class="field">
+    <%= f.label :BOB %><br />
+    <%= f.text_field :BOB %>
+  </div>
+  <div class="field">
+    <%= f.label :BRL %><br />
+    <%= f.text_field :BRL %>
+  </div>
+  <div class="field">
+    <%= f.label :BSD %><br />
+    <%= f.text_field :BSD %>
+  </div>
+  <div class="field">
+    <%= f.label :BTN %><br />
+    <%= f.text_field :BTN %>
+  </div>
+  <div class="field">
+    <%= f.label :BWP %><br />
+    <%= f.text_field :BWP %>
+  </div>
+  <div class="field">
+    <%= f.label :BYR %><br />
+    <%= f.text_field :BYR %>
+  </div>
+  <div class="field">
+    <%= f.label :BZD %><br />
+    <%= f.text_field :BZD %>
+  </div>
+  <div class="field">
+    <%= f.label :CAD %><br />
+    <%= f.text_field :CAD %>
+  </div>
+  <div class="field">
+    <%= f.label :CDF %><br />
+    <%= f.text_field :CDF %>
+  </div>
+  <div class="field">
+    <%= f.label :CHF %><br />
+    <%= f.text_field :CHF %>
+  </div>
+  <div class="field">
+    <%= f.label :CLF %><br />
+    <%= f.text_field :CLF %>
+  </div>
+  <div class="field">
+    <%= f.label :CLP %><br />
+    <%= f.text_field :CLP %>
+  </div>
+  <div class="field">
+    <%= f.label :CNY %><br />
+    <%= f.text_field :CNY %>
+  </div>
+  <div class="field">
+    <%= f.label :COP %><br />
+    <%= f.text_field :COP %>
+  </div>
+  <div class="field">
+    <%= f.label :CRC %><br />
+    <%= f.text_field :CRC %>
+  </div>
+  <div class="field">
+    <%= f.label :CUP %><br />
+    <%= f.text_field :CUP %>
+  </div>
+  <div class="field">
+    <%= f.label :CVE %><br />
+    <%= f.text_field :CVE %>
+  </div>
+  <div class="field">
+    <%= f.label :CZK %><br />
+    <%= f.text_field :CZK %>
+  </div>
+  <div class="field">
+    <%= f.label :DJF %><br />
+    <%= f.text_field :DJF %>
+  </div>
+  <div class="field">
+    <%= f.label :DKK %><br />
+    <%= f.text_field :DKK %>
+  </div>
+  <div class="field">
+    <%= f.label :DOP %><br />
+    <%= f.text_field :DOP %>
+  </div>
+  <div class="field">
+    <%= f.label :DZD %><br />
+    <%= f.text_field :DZD %>
+  </div>
+  <div class="field">
+    <%= f.label :EGP %><br />
+    <%= f.text_field :EGP %>
+  </div>
+  <div class="field">
+    <%= f.label :ETB %><br />
+    <%= f.text_field :ETB %>
+  </div>
+  <div class="field">
+    <%= f.label :EUR %><br />
+    <%= f.text_field :EUR %>
+  </div>
+  <div class="field">
+    <%= f.label :FJD %><br />
+    <%= f.text_field :FJD %>
+  </div>
+  <div class="field">
+    <%= f.label :FKP %><br />
+    <%= f.text_field :FKP %>
+  </div>
+  <div class="field">
+    <%= f.label :GBP %><br />
+    <%= f.text_field :GBP %>
+  </div>
+  <div class="field">
+    <%= f.label :GEL %><br />
+    <%= f.text_field :GEL %>
+  </div>
+  <div class="field">
+    <%= f.label :GHS %><br />
+    <%= f.text_field :GHS %>
+  </div>
+  <div class="field">
+    <%= f.label :GIP %><br />
+    <%= f.text_field :GIP %>
+  </div>
+  <div class="field">
+    <%= f.label :GMD %><br />
+    <%= f.text_field :GMD %>
+  </div>
+  <div class="field">
+    <%= f.label :GNF %><br />
+    <%= f.text_field :GNF %>
+  </div>
+  <div class="field">
+    <%= f.label :GTQ %><br />
+    <%= f.text_field :GTQ %>
+  </div>
+  <div class="field">
+    <%= f.label :GYD %><br />
+    <%= f.text_field :GYD %>
+  </div>
+  <div class="field">
+    <%= f.label :HKD %><br />
+    <%= f.text_field :HKD %>
+  </div>
+  <div class="field">
+    <%= f.label :HNL %><br />
+    <%= f.text_field :HNL %>
+  </div>
+  <div class="field">
+    <%= f.label :HRK %><br />
+    <%= f.text_field :HRK %>
+  </div>
+  <div class="field">
+    <%= f.label :HTG %><br />
+    <%= f.text_field :HTG %>
+  </div>
+  <div class="field">
+    <%= f.label :HUF %><br />
+    <%= f.text_field :HUF %>
+  </div>
+  <div class="field">
+    <%= f.label :IDR %><br />
+    <%= f.text_field :IDR %>
+  </div>
+  <div class="field">
+    <%= f.label :ILS %><br />
+    <%= f.text_field :ILS %>
+  </div>
+  <div class="field">
+    <%= f.label :INR %><br />
+    <%= f.text_field :INR %>
+  </div>
+  <div class="field">
+    <%= f.label :IQD %><br />
+    <%= f.text_field :IQD %>
+  </div>
+  <div class="field">
+    <%= f.label :IRR %><br />
+    <%= f.text_field :IRR %>
+  </div>
+  <div class="field">
+    <%= f.label :ISK %><br />
+    <%= f.text_field :ISK %>
+  </div>
+  <div class="field">
+    <%= f.label :JMD %><br />
+    <%= f.text_field :JMD %>
+  </div>
+  <div class="field">
+    <%= f.label :JOD %><br />
+    <%= f.text_field :JOD %>
+  </div>
+  <div class="field">
+    <%= f.label :JPY %><br />
+    <%= f.text_field :JPY %>
+  </div>
+  <div class="field">
+    <%= f.label :KES %><br />
+    <%= f.text_field :KES %>
+  </div>
+  <div class="field">
+    <%= f.label :KGS %><br />
+    <%= f.text_field :KGS %>
+  </div>
+  <div class="field">
+    <%= f.label :KHR %><br />
+    <%= f.text_field :KHR %>
+  </div>
+  <div class="field">
+    <%= f.label :KMF %><br />
+    <%= f.text_field :KMF %>
+  </div>
+  <div class="field">
+    <%= f.label :KPW %><br />
+    <%= f.text_field :KPW %>
+  </div>
+  <div class="field">
+    <%= f.label :KRW %><br />
+    <%= f.text_field :KRW %>
+  </div>
+  <div class="field">
+    <%= f.label :KWD %><br />
+    <%= f.text_field :KWD %>
+  </div>
+  <div class="field">
+    <%= f.label :KZT %><br />
+    <%= f.text_field :KZT %>
+  </div>
+  <div class="field">
+    <%= f.label :LAK %><br />
+    <%= f.text_field :LAK %>
+  </div>
+  <div class="field">
+    <%= f.label :LBP %><br />
+    <%= f.text_field :LBP %>
+  </div>
+  <div class="field">
+    <%= f.label :LKR %><br />
+    <%= f.text_field :LKR %>
+  </div>
+  <div class="field">
+    <%= f.label :LRD %><br />
+    <%= f.text_field :LRD %>
+  </div>
+  <div class="field">
+    <%= f.label :LSL %><br />
+    <%= f.text_field :LSL %>
+  </div>
+  <div class="field">
+    <%= f.label :LTL %><br />
+    <%= f.text_field :LTL %>
+  </div>
+  <div class="field">
+    <%= f.label :LVL %><br />
+    <%= f.text_field :LVL %>
+  </div>
+  <div class="field">
+    <%= f.label :LYD %><br />
+    <%= f.text_field :LYD %>
+  </div>
+  <div class="field">
+    <%= f.label :MAD %><br />
+    <%= f.text_field :MAD %>
+  </div>
+  <div class="field">
+    <%= f.label :MDL %><br />
+    <%= f.text_field :MDL %>
+  </div>
+  <div class="field">
+    <%= f.label :MGA %><br />
+    <%= f.text_field :MGA %>
+  </div>
+  <div class="field">
+    <%= f.label :MKD %><br />
+    <%= f.text_field :MKD %>
+  </div>
+  <div class="field">
+    <%= f.label :MMK %><br />
+    <%= f.text_field :MMK %>
+  </div>
+  <div class="field">
+    <%= f.label :MNT %><br />
+    <%= f.text_field :MNT %>
+  </div>
+  <div class="field">
+    <%= f.label :MOP %><br />
+    <%= f.text_field :MOP %>
+  </div>
+  <div class="field">
+    <%= f.label :MRO %><br />
+    <%= f.text_field :MRO %>
+  </div>
+  <div class="field">
+    <%= f.label :MUR %><br />
+    <%= f.text_field :MUR %>
+  </div>
+  <div class="field">
+    <%= f.label :MVR %><br />
+    <%= f.text_field :MVR %>
+  </div>
+  <div class="field">
+    <%= f.label :MWK %><br />
+    <%= f.text_field :MWK %>
+  </div>
+  <div class="field">
+    <%= f.label :MXN %><br />
+    <%= f.text_field :MXN %>
+  </div>
+  <div class="field">
+    <%= f.label :MYR %><br />
+    <%= f.text_field :MYR %>
+  </div>
+  <div class="field">
+    <%= f.label :MZN %><br />
+    <%= f.text_field :MZN %>
+  </div>
+  <div class="field">
+    <%= f.label :NAD %><br />
+    <%= f.text_field :NAD %>
+  </div>
+  <div class="field">
+    <%= f.label :NGN %><br />
+    <%= f.text_field :NGN %>
+  </div>
+  <div class="field">
+    <%= f.label :NIO %><br />
+    <%= f.text_field :NIO %>
+  </div>
+  <div class="field">
+    <%= f.label :NOK %><br />
+    <%= f.text_field :NOK %>
+  </div>
+  <div class="field">
+    <%= f.label :NPR %><br />
+    <%= f.text_field :NPR %>
+  </div>
+  <div class="field">
+    <%= f.label :NZD %><br />
+    <%= f.text_field :NZD %>
+  </div>
+  <div class="field">
+    <%= f.label :OMR %><br />
+    <%= f.text_field :OMR %>
+  </div>
+  <div class="field">
+    <%= f.label :PAB %><br />
+    <%= f.text_field :PAB %>
+  </div>
+  <div class="field">
+    <%= f.label :PEN %><br />
+    <%= f.text_field :PEN %>
+  </div>
+  <div class="field">
+    <%= f.label :PGK %><br />
+    <%= f.text_field :PGK %>
+  </div>
+  <div class="field">
+    <%= f.label :PHP %><br />
+    <%= f.text_field :PHP %>
+  </div>
+  <div class="field">
+    <%= f.label :PKR %><br />
+    <%= f.text_field :PKR %>
+  </div>
+  <div class="field">
+    <%= f.label :PLN %><br />
+    <%= f.text_field :PLN %>
+  </div>
+  <div class="field">
+    <%= f.label :PYG %><br />
+    <%= f.text_field :PYG %>
+  </div>
+  <div class="field">
+    <%= f.label :QAR %><br />
+    <%= f.text_field :QAR %>
+  </div>
+  <div class="field">
+    <%= f.label :RON %><br />
+    <%= f.text_field :RON %>
+  </div>
+  <div class="field">
+    <%= f.label :RSD %><br />
+    <%= f.text_field :RSD %>
+  </div>
+  <div class="field">
+    <%= f.label :RUB %><br />
+    <%= f.text_field :RUB %>
+  </div>
+  <div class="field">
+    <%= f.label :RWF %><br />
+    <%= f.text_field :RWF %>
+  </div>
+  <div class="field">
+    <%= f.label :SAR %><br />
+    <%= f.text_field :SAR %>
+  </div>
+  <div class="field">
+    <%= f.label :SBD %><br />
+    <%= f.text_field :SBD %>
+  </div>
+  <div class="field">
+    <%= f.label :SCR %><br />
+    <%= f.text_field :SCR %>
+  </div>
+  <div class="field">
+    <%= f.label :SDG %><br />
+    <%= f.text_field :SDG %>
+  </div>
+  <div class="field">
+    <%= f.label :SEK %><br />
+    <%= f.text_field :SEK %>
+  </div>
+  <div class="field">
+    <%= f.label :SGD %><br />
+    <%= f.text_field :SGD %>
+  </div>
+  <div class="field">
+    <%= f.label :SHP %><br />
+    <%= f.text_field :SHP %>
+  </div>
+  <div class="field">
+    <%= f.label :SLL %><br />
+    <%= f.text_field :SLL %>
+  </div>
+  <div class="field">
+    <%= f.label :SOS %><br />
+    <%= f.text_field :SOS %>
+  </div>
+  <div class="field">
+    <%= f.label :SRD %><br />
+    <%= f.text_field :SRD %>
+  </div>
+  <div class="field">
+    <%= f.label :STD %><br />
+    <%= f.text_field :STD %>
+  </div>
+  <div class="field">
+    <%= f.label :SVC %><br />
+    <%= f.text_field :SVC %>
+  </div>
+  <div class="field">
+    <%= f.label :SYP %><br />
+    <%= f.text_field :SYP %>
+  </div>
+  <div class="field">
+    <%= f.label :SZL %><br />
+    <%= f.text_field :SZL %>
+  </div>
+  <div class="field">
+    <%= f.label :THB %><br />
+    <%= f.text_field :THB %>
+  </div>
+  <div class="field">
+    <%= f.label :TJS %><br />
+    <%= f.text_field :TJS %>
+  </div>
+  <div class="field">
+    <%= f.label :TMT %><br />
+    <%= f.text_field :TMT %>
+  </div>
+  <div class="field">
+    <%= f.label :TND %><br />
+    <%= f.text_field :TND %>
+  </div>
+  <div class="field">
+    <%= f.label :TOP %><br />
+    <%= f.text_field :TOP %>
+  </div>
+  <div class="field">
+    <%= f.label :TRY %><br />
+    <%= f.text_field :TRY %>
+  </div>
+  <div class="field">
+    <%= f.label :TTD %><br />
+    <%= f.text_field :TTD %>
+  </div>
+  <div class="field">
+    <%= f.label :TWD %><br />
+    <%= f.text_field :TWD %>
+  </div>
+  <div class="field">
+    <%= f.label :TZS %><br />
+    <%= f.text_field :TZS %>
+  </div>
+  <div class="field">
+    <%= f.label :UAH %><br />
+    <%= f.text_field :UAH %>
+  </div>
+  <div class="field">
+    <%= f.label :UGX %><br />
+    <%= f.text_field :UGX %>
+  </div>
+  <div class="field">
+    <%= f.label :USD %><br />
+    <%= f.text_field :USD %>
+  </div>
+  <div class="field">
+    <%= f.label :UYU %><br />
+    <%= f.text_field :UYU %>
+  </div>
+  <div class="field">
+    <%= f.label :UZS %><br />
+    <%= f.text_field :UZS %>
+  </div>
+  <div class="field">
+    <%= f.label :VEF %><br />
+    <%= f.text_field :VEF %>
+  </div>
+  <div class="field">
+    <%= f.label :VND %><br />
+    <%= f.text_field :VND %>
+  </div>
+  <div class="field">
+    <%= f.label :VUV %><br />
+    <%= f.text_field :VUV %>
+  </div>
+  <div class="field">
+    <%= f.label :WST %><br />
+    <%= f.text_field :WST %>
+  </div>
+  <div class="field">
+    <%= f.label :XAF %><br />
+    <%= f.text_field :XAF %>
+  </div>
+  <div class="field">
+    <%= f.label :XCD %><br />
+    <%= f.text_field :XCD %>
+  </div>
+  <div class="field">
+    <%= f.label :XDR %><br />
+    <%= f.text_field :XDR %>
+  </div>
+  <div class="field">
+    <%= f.label :XOF %><br />
+    <%= f.text_field :XOF %>
+  </div>
+  <div class="field">
+    <%= f.label :XPF %><br />
+    <%= f.text_field :XPF %>
+  </div>
+  <div class="field">
+    <%= f.label :YER %><br />
+    <%= f.text_field :YER %>
+  </div>
+  <div class="field">
+    <%= f.label :ZAR %><br />
+    <%= f.text_field :ZAR %>
+  </div>
+  <div class="field">
+    <%= f.label :ZMK %><br />
+    <%= f.text_field :ZMK %>
+  </div>
+  <div class="field">
+    <%= f.label :ZWL %><br />
+    <%= f.text_field :ZWL %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

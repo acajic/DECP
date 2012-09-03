@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>City:</b>
+  <%= @admin_module_weather.city %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @admin_module_weather.country %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @admin_module_weather.date %>
+</p>
+
+<p>
+  <b>Tempmaxc:</b>
+  <%= @admin_module_weather.tempMaxC %>
+</p>
+
+<p>
+  <b>Tempminc:</b>
+  <%= @admin_module_weather.tempMinC %>
+</p>
+
+<p>
+  <b>Windspeedkmph:</b>
+  <%= @admin_module_weather.windspeedKmph %>
+</p>
+
+<p>
+  <b>Winddirection:</b>
+  <%= @admin_module_weather.winddirection %>
+</p>
+
+<p>
+  <b>Weathericonurl:</b>
+  <%= @admin_module_weather.weatherIconUrl %>
+</p>
+
+<p>
+  <b>Weatherdesc:</b>
+  <%= @admin_module_weather.weatherDesc %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_module_weather_path(@admin_module_weather) %> |
+<%= link_to 'Back', admin_module_weathers_path %>

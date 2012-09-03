@@ -1,0 +1,24 @@
+Plural version of the model detected, using singularized version. Override with --force-plural.
+      invoke  active_record
+      create    db/migrate/20120902230047_create_admin_module_rates.rb
+      create    app/models/admin/module_rate.rb
+   identical    app/models/admin.rb
+       route  namespace :admin do resources :module_rates end
+      invoke  scaffold_controller
+      create    app/controllers/admin/module_rates_controller.rb
+      invoke    erb
+      create      app/views/admin/module_rates
+      create      app/views/admin/module_rates/index.html.erb
+      create      app/views/admin/module_rates/edit.html.erb
+      create      app/views/admin/module_rates/show.html.erb
+      create      app/views/admin/module_rates/new.html.erb
+      create      app/views/admin/module_rates/_form.html.erb
+      invoke    helper
+   identical      app/helpers/admin/module_rates_helper.rb
+      invoke  assets
+      invoke    coffee
+   identical      app/assets/javascripts/admin/module_rates.js.coffee
+      invoke    scss
+   identical      app/assets/stylesheets/admin/module_rates.css.scss
+      invoke  scss
+   identical    app/assets/stylesheets/scaffolds.css.scss

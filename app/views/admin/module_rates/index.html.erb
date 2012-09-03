@@ -1,0 +1,38 @@
+<h1>Listing admin_module_rates</h1>
+
+<table>
+  <tr>
+    <th>timestamp</th>
+    <th>Chf</th>
+    <th>Cny</th>
+    <th>Eur</th>
+    <th>Gbp</th>
+    <th>Hrk</th>
+    <th>Jpy</th>
+    <th>Usd</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @admin_module_rates.each do |admin_module_rate| %>
+      <tr>
+        <td><%= admin_module_rate.timestamp %></td>
+        <td><%= admin_module_rate.CHF %></td>
+        <td><%= admin_module_rate.CNY %></td>
+        <td><%= admin_module_rate.EUR %></td>
+        <td><%= admin_module_rate.GBP %></td>
+        <td><%= admin_module_rate.HRK %></td>
+        <td><%= admin_module_rate.JPY %></td>
+        <td><%= admin_module_rate.USD %></td>
+        <td><%= link_to 'Show', admin_module_rate %></td>
+        <td><%= link_to 'Edit', edit_admin_module_rate_path(admin_module_rate) %></td>
+        <td><%= link_to 'Destroy', admin_module_rate, confirm: 'Are you sure?', method: :delete %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br/>
+
+<td><%= link_to "Back to all modules", :controller => "admin/decp_modules", :action => "index" %></td>
+<%= link_to 'New Module rate', new_admin_module_rate_path %>

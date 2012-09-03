@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing admin_decp_modules</h1>
+
+<%= link_to 'Fetch data for all active modules', :action => :fetch %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Active</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @admin_decp_modules.each do |admin_decp_module| %>
+      <tr>
+        <td style="vertical-align: top;"><%= admin_decp_module.name %></td>
+        <td><%= text_area_tag(:description, admin_decp_module.description, :readonly => true, :size => "24x2")  %></td>
+        <td style="vertical-align: top;"><%= admin_decp_module.active? ? "Yes" : "No" %></td>
+        <td style="vertical-align: top;"><%= link_to 'Show', admin_decp_module %></td>
+        <td style="vertical-align: top;"><%= link_to 'Edit', edit_admin_decp_module_path(admin_decp_module) %></td>
+        <td style="vertical-align: top;"><%= link_to 'Destroy', admin_decp_module, confirm: 'All data from that module will be lost. Are you sure you don\'t want to simply de-activate? (Operation could take some time to complete)', method: :delete %></td>
+        <td style="vertical-align: top;"><%= link_to "Fetch", :action => :fetch, :id => admin_decp_module.id %></td>
+        <td style="vertical-align: top;"><%= link_to "See Records", :controller => "admin/module_#{admin_decp_module.name.pluralize}", :action => "index" %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br/>
+
+<%= link_to 'New Decp module', new_admin_decp_module_path %>

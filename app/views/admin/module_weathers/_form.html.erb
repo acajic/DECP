@@ -1,0 +1,53 @@
+<%= form_for(@admin_module_weather) do |f| %>
+  <% if @admin_module_weather.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@admin_module_weather.errors.count, "error") %> prohibited this admin_module_weather from being saved:</h2>
+
+      <ul>
+      <% @admin_module_weather.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :tempMaxC %><br />
+    <%= f.text_field :tempMaxC %>
+  </div>
+  <div class="field">
+    <%= f.label :tempMinC %><br />
+    <%= f.text_field :tempMinC %>
+  </div>
+  <div class="field">
+    <%= f.label :windspeedKmph %><br />
+    <%= f.text_field :windspeedKmph %>
+  </div>
+  <div class="field">
+    <%= f.label :winddirection %><br />
+    <%= f.text_field :winddirection %>
+  </div>
+  <div class="field">
+    <%= f.label :weatherIconUrl %><br />
+    <%= f.text_field :weatherIconUrl %>
+  </div>
+  <div class="field">
+    <%= f.label :weatherDesc %><br />
+    <%= f.text_field :weatherDesc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<h1>Listing admin_module_weathers</h1>
+
+<table>
+  <tr>
+    <th>City</th>
+    <th>Country</th>
+    <th>Date</th>
+    <th>Tempmaxc</th>
+    <th>Tempminc</th>
+    <th>Windspeedkmph</th>
+    <th>Winddirection</th>
+    <th>Weathericonurl</th>
+    <th>Weatherdesc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_module_weathers.each do |admin_module_weather| %>
+  <tr>
+    <td><%= admin_module_weather.city %></td>
+    <td><%= admin_module_weather.country %></td>
+    <td><%= admin_module_weather.date %></td>
+    <td><%= admin_module_weather.tempMaxC %></td>
+    <td><%= admin_module_weather.tempMinC %></td>
+    <td><%= admin_module_weather.windspeedKmph %></td>
+    <td><%= admin_module_weather.winddirection %></td>
+    <td><%= admin_module_weather.weatherIconUrl %></td>
+    <td><%= admin_module_weather.weatherDesc %></td>
+    <td><%= link_to 'Show', admin_module_weather %></td>
+    <td><%= link_to 'Edit', edit_admin_module_weather_path(admin_module_weather) %></td>
+    <td><%= link_to 'Destroy', admin_module_weather, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Module weather', new_admin_module_weather_path %>

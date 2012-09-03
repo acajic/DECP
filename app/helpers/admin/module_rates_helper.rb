@@ -1,0 +1,2 @@
+module Admin::ModuleRatesHelper
+end
