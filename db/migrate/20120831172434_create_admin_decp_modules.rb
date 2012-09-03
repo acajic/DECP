@@ -7,7 +7,7 @@ class CreateAdminDecpModules < ActiveRecord::Migration
       t.string "migration_version"
       t.timestamps
     end
-    Admin::DecpModule.create(:name => "rates", :description => "Currency exchange rates")
+
   end
 
 
