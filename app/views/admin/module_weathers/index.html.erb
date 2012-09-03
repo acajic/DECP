@@ -9,7 +9,7 @@
     <th>Tempminc</th>
     <th>Windspeedkmph</th>
     <th>Winddirection</th>
-    <th>Weathericonurl</th>
+    <th>WeatherPicture</th>
     <th>Weatherdesc</th>
     <th></th>
     <th></th>
@@ -21,11 +21,11 @@
     <td><%= admin_module_weather.city %></td>
     <td><%= admin_module_weather.country %></td>
     <td><%= admin_module_weather.date %></td>
-    <td><%= admin_module_weather.tempMaxC %></td>
-    <td><%= admin_module_weather.tempMinC %></td>
-    <td><%= admin_module_weather.windspeedKmph %></td>
+    <td><%= admin_module_weather.tempMaxC %> °C</td>
+    <td><%= admin_module_weather.tempMinC %> °C</td>
+    <td><%= admin_module_weather.windspeedKmph %> km/h</td>
     <td><%= admin_module_weather.winddirection %></td>
-    <td><%= admin_module_weather.weatherIconUrl %></td>
+    <td><%= image_tag admin_module_weather.weatherIconUrl %></td>
     <td><%= admin_module_weather.weatherDesc %></td>
     <td><%= link_to 'Show', admin_module_weather %></td>
     <td><%= link_to 'Edit', edit_admin_module_weather_path(admin_module_weather) %></td>
