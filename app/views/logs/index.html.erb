@@ -7,6 +7,8 @@
     <th>Admin decp module</th>
     <th>Success</th>
     <th>Details</th>
+    <th>Timestamp</th>
+    <th>Details</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,6 +19,7 @@
     <td><%= log.admin_decp_module_id %></td>
     <td><%= log.success %></td>
     <td><%= log.details %></td>
+    <td><%= log.created_at %></td>
     <td><%= link_to 'Show', log %></td>
     <td><%= link_to 'Edit', edit_log_path(log) %></td>
     <td><%= link_to 'Destroy', log, confirm: 'Are you sure?', method: :delete %></td>
