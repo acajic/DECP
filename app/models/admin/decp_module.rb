@@ -44,7 +44,6 @@ class Admin::DecpModule < ActiveRecord::Base
 
   def self.get_last_migration_version
     migrations = Dir.glob Rails.root.join("db", "migrate", "*")
-    migrations.sort
 
     migration = migrations.last
     migration = File.basename(migration, ".rb")
