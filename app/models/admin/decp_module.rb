@@ -95,18 +95,16 @@ class Admin::DecpModule < ActiveRecord::Base
 
     threads = Hash.new
     module_models.each_pair do |module_name, module_model|
-      response = Hash.new
       threads[module_name] = Thread.new do
-        success = true
         details = ""
+        response = Hash.new
+        response[:details] = ""
+        response[:success] = true
         begin
           response = module_model.fetch(module_args[module_name])
         rescue Exception => e
-          success = false
-          details = e
-        ensure
-          response[:success] = success
-          response[:details] = details
+          response[:success]  = false
+          response[:details] << "Modul nema implementiranu metodu za dohvat podataka -- " << module_model.name << ".fetch(). "
         end
 
         response
@@ -121,8 +119,17 @@ class Admin::DecpModule < ActiveRecord::Base
     ActiveRecord::Base.transaction do
       responses.each_pair do |module_name, response|
         records = response[:records]
-        records.each do |record|
-          record.save
+        begin
+          if records.respond_to?(:each)
+            records.each do |record|
+              record.save
+            end
+          else
+            records.save
+          end
+        rescue Exception => e
+          response[:success] = false
+          response[:details] << module_models[module_name].name << ".fetch() vraca neispravno strukturirane podatke. "
         end
         Log.create(:admin_decp_module => decp_models[module_name], :success => response[:success], :details => response[:details])
       end
@@ -143,15 +150,36 @@ class Admin::DecpModule < ActiveRecord::Base
       end
     end
 
-    response = module_model.fetch(args)
+    success = true
+    response = Hash.new
+    response[:success] = true
+    response[:details] = ""
+    begin
+      response = module_model.fetch(args)
+    rescue Exception => e
+      success = false
+      response[:details] << "Modul nema implementiranu metodu za dohvat podataka -- " << module_model.name << ".fetch(). "
+    end
+
 
     records = response[:records]
+
     ActiveRecord::Base.transaction do
-      records.each do |record|
-        record.save
+      begin
+        if records.respond_to?(:each)
+          records.each do |record|
+            record.save
+          end
+        else
+          records.save
+        end
+      rescue Exception => e
+        success = false
+        response[:details] << module_model.name << ".fetch() vraca neispravno strukturirane podatke. "
       end
       Log.create(:admin_decp_module => self, :success => response[:success], :details => response[:details])
     end
+
 
   end
 end
