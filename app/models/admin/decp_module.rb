@@ -75,6 +75,8 @@ class Admin::DecpModule < ActiveRecord::Base
     decp_models = Hash.new
     module_models = Hash.new
     module_args = Hash.new
+
+
     ActiveRecord::Base.transaction do
       modules.each do |modul|
         module_name = "module_" + modul.name
