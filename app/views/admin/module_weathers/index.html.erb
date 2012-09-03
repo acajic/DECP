@@ -5,12 +5,12 @@
     <th>City</th>
     <th>Country</th>
     <th>Date</th>
-    <th>Tempmaxc</th>
-    <th>Tempminc</th>
-    <th>Windspeedkmph</th>
-    <th>Winddirection</th>
-    <th>WeatherPicture</th>
-    <th>Weatherdesc</th>
+    <th>Temp Max</th>
+    <th>Temp Min </th>
+    <th>Wind Speed</th>
+    <th>Wind Direction</th>
+    <th>Weather Picture</th>
+    <th>Weather Description</th>
     <th></th>
     <th></th>
     <th></th>
@@ -36,4 +36,5 @@
 
 <br />
 
+<td><%= link_to "Back to all modules", :controller => "admin/decp_modules", :action => "index" %></td>
 <%= link_to 'New Module weather', new_admin_module_weather_path %>

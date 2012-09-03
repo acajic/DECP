@@ -4,7 +4,7 @@ class Admin::ModuleWeather < ActiveRecord::Base
     args = Hash.new
     args[:city] = "Zagreb"
     args[:country] = "Croatia"
-    args[:num_of_days] = 2
+    args[:num_of_days] = 4
     args[:key] = "1a75ab32de233416120209"
 
     args
