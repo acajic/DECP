@@ -1,12 +1,12 @@
 class Admin::ModuleWeather < ActiveRecord::Base
 
-  validates_uniqueness_of :date, :scope => [:city, :country]
+ # validates_uniqueness_of :date, :scope => [:city, :country]
 
   def self.get_args
     args = Hash.new
     args[:city] = "Zagreb"
     args[:country] = "Croatia"
-    args[:num_of_days] = 4
+    args[:num_of_days] = 1
     args[:key] = "1a75ab32de233416120209"
 
     args

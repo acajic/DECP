@@ -11,11 +11,11 @@ class Admin::ModuleRate < ActiveRecord::Base
 
 
   def self.get_args
-    params = Hash.new
-    params[:from_date] = "2012-08-12"
-    params[:to_date] = "2012-08-14"
+    #params = Hash.new
+    #params[:from_date] = "2012-08-12"
+    #params[:to_date] = "2012-08-14"
 
-    params
+    #params
   end
 
   def self.fetch(args)

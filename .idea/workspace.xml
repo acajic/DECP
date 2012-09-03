@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="394506d9-5ce8-4daa-ae17-aeecb164d1da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin/module_rate.rb" afterPath="$PROJECT_DIR$/app/models/admin/module_rate.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin/module_weather.rb" afterPath="$PROJECT_DIR$/app/models/admin/module_weather.rb" />
     </list>
     <ignored path="DECP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,46 +24,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="decp_module.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="18" selection-start="1841" selection-end="1841" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="2843" selection-end="2843" vertical-scroll-proportion="-9.538462">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="148" selection-end="148" vertical-scroll-proportion="0.30591258">
+            <state line="6" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/decp_modules/show.html.erb">
+      <file leaf-file-name="module_weather.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/admin/module_weather.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="200" selection-start="497" selection-end="651" vertical-scroll-proportion="-9.538462">
+            <state line="8" column="26" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decp_modules_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb">
+      <file leaf-file-name="module_rate.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/admin/module_rate.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+            <state line="17" column="5" selection-start="346" selection-end="346" vertical-scroll-proportion="0.7429306">
               <folding />
             </state>
           </provider>
@@ -86,13 +70,11 @@
       <list>
         <option value="$PROJECT_DIR$/app/views/sadf.html" />
         <option value="$PROJECT_DIR$/app/views/sadf.xml" />
-        <option value="$PROJECT_DIR$/app/models/admin/module_rate.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/module_weathers/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/module_weathers/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/module_weathers/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/decp_modules/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/decp_modules/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/admin/module_weather.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120831172434_create_admin_decp_modules.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120903000321_create_admin_module_weathers.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120902230047_create_admin_module_rates.rb" />
@@ -100,6 +82,8 @@
         <option value="$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/admin/module_weather.rb" />
+        <option value="$PROJECT_DIR$/app/models/admin/module_rate.rb" />
       </list>
     </option>
   </component>
@@ -224,6 +208,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="decp_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -707,7 +731,11 @@
       <created>1346684596050</created>
       <updated>1346684596050</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="popravak gemfajla">
+      <created>1346684820243</created>
+      <updated>1346684820243</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -769,7 +797,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="confirmation prije stvaranja novog modula" />
+    <option name="LAST_COMMIT_MESSAGE" value="popravak gemfajla" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -788,18 +816,12 @@
     <MESSAGE value="nesto ispravljene migracije i to" />
     <MESSAGE value="popravljeno da se i description spremi kad se stvara novi modul" />
     <MESSAGE value="confirmation prije stvaranja novog modula" />
+    <MESSAGE value="popravak gemfajla" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/admin/module_weathers/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="24" selection-start="642" selection-end="642" vertical-scroll-proportion="0.46831957">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/module_rates/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="976" selection-end="1078" vertical-scroll-proportion="-8.730769">
@@ -835,13 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin/module_weather.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="130" selection-end="130" vertical-scroll-proportion="-0.22606383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20120903000321_create_admin_module_weathers.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="34" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
@@ -870,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="18" selection-start="1841" selection-end="1841" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/decp_modules/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="845" selection-end="845" vertical-scroll-proportion="0.58285713">
@@ -898,9 +906,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="18" selection-start="1841" selection-end="1841" vertical-scroll-proportion="1.6728723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="148" selection-end="148" vertical-scroll-proportion="0.30591258">
+        <state line="6" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/admin/module_weather.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="26" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/admin/module_rate.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="346" selection-end="346" vertical-scroll-proportion="0.7429306">
           <folding />
         </state>
       </provider>
