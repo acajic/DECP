@@ -4,8 +4,7 @@
     <list default="true" id="394506d9-5ce8-4daa-ae17-aeecb164d1da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin/module_rate.rb" afterPath="$PROJECT_DIR$/app/models/admin/module_rate.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin/module_weather.rb" afterPath="$PROJECT_DIR$/app/models/admin/module_weather.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin/decp_module.rb" afterPath="$PROJECT_DIR$/app/models/admin/decp_module.rb" />
     </list>
     <ignored path="DECP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="module_rate.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/admin/module_rate.rb">
+      <file leaf-file-name="decp_module.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="5" selection-start="346" selection-end="346" vertical-scroll-proportion="0.7429306">
+            <state line="138" column="40" selection-start="4063" selection-end="4063" vertical-scroll-proportion="0.36702126">
               <folding />
             </state>
           </provider>
@@ -78,12 +77,12 @@
         <option value="$PROJECT_DIR$/db/migrate/20120831172434_create_admin_decp_modules.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120903000321_create_admin_module_weathers.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120902230047_create_admin_module_rates.rb" />
-        <option value="$PROJECT_DIR$/app/models/admin/decp_module.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/admin/module_weather.rb" />
         <option value="$PROJECT_DIR$/app/models/admin/module_rate.rb" />
+        <option value="$PROJECT_DIR$/app/models/admin/decp_module.rb" />
       </list>
     </option>
   </component>
@@ -735,7 +734,11 @@
       <created>1346684820243</created>
       <updated>1346684820243</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="defaultni argumenti pobrisani">
+      <created>1346685290554</created>
+      <updated>1346685290554</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -797,7 +800,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="popravak gemfajla" />
+    <option name="LAST_COMMIT_MESSAGE" value="defaultni argumenti pobrisani" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -817,6 +820,7 @@
     <MESSAGE value="popravljeno da se i description spremi kad se stvara novi modul" />
     <MESSAGE value="confirmation prije stvaranja novog modula" />
     <MESSAGE value="popravak gemfajla" />
+    <MESSAGE value="defaultni argumenti pobrisani" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -906,16 +910,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="18" selection-start="1841" selection-end="1841" vertical-scroll-proportion="1.6728723">
+        <state line="6" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/models/admin/module_rate.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+        <state line="17" column="5" selection-start="346" selection-end="346" vertical-scroll-proportion="0.7429306">
           <folding />
         </state>
       </provider>
@@ -927,9 +931,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin/module_rate.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="346" selection-end="346" vertical-scroll-proportion="0.7429306">
+        <state line="138" column="40" selection-start="4063" selection-end="4063" vertical-scroll-proportion="0.36702126">
           <folding />
         </state>
       </provider>

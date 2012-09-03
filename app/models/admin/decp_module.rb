@@ -81,7 +81,14 @@ class Admin::DecpModule < ActiveRecord::Base
         module_model = Admin.const_get(module_name.singularize.camelcase)
         module_models[module_name] = module_model
         decp_models[module_name] = modul
-        module_args[module_name] = module_model.respond_to?("get_args") ? module_model.get_args : Hash.new
+
+        module_args[module_name] = Hash.new
+        if module_model.respond_to?("get_args")
+          args = module_model.get_args
+          unless args.nil?
+            module_args[module_name] = args
+          end
+        end
       end
     end
 
@@ -129,7 +136,10 @@ class Admin::DecpModule < ActiveRecord::Base
     args = Hash.new
     if  module_model.respond_to?("get_args")
       ActiveRecord::Base.transaction do
-        args = module_model.get_args
+        new_args = module_model.get_args
+        unless new_args.nil?
+          args = new_args
+        end
       end
     end
 
