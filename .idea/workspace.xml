@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin/decp_module.rb" afterPath="$PROJECT_DIR$/app/models/admin/decp_module.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin/module_weather.rb" afterPath="$PROJECT_DIR$/app/models/admin/module_weather.rb" />
     </list>
     <ignored path="DECP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,19 +33,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="module_weather.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="module_weather.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/admin/module_weather.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="26" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
+            <state line="62" column="22" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.63829786">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decp_module.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sadf.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sadf.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="10" selection-start="795" selection-end="802" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="decp_module.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="40" selection-start="4063" selection-end="4063" vertical-scroll-proportion="0.36702126">
+            <state line="139" column="41" selection-start="4120" selection-end="4120" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,9 +90,9 @@
         <option value="$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/models/admin/module_weather.rb" />
         <option value="$PROJECT_DIR$/app/models/admin/module_rate.rb" />
         <option value="$PROJECT_DIR$/app/models/admin/decp_module.rb" />
+        <option value="$PROJECT_DIR$/app/models/admin/module_weather.rb" />
       </list>
     </option>
   </component>
@@ -738,7 +748,11 @@
       <created>1346685290554</created>
       <updated>1346685290554</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="defaultni argumenti pobrisani">
+      <created>1346685976302</created>
+      <updated>1346685976302</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -840,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sadf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="10" selection-start="795" selection-end="802" vertical-scroll-proportion="0.045212764">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/plugins/.gitkeep">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -924,16 +931,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin/module_weather.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
+        <state line="139" column="41" selection-start="4120" selection-end="4120" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/sadf.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="40" selection-start="4063" selection-end="4063" vertical-scroll-proportion="0.36702126">
+        <state line="24" column="10" selection-start="795" selection-end="802" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/admin/module_weather.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="22" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.63829786">
           <folding />
         </state>
       </provider>

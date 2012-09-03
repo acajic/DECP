@@ -85,7 +85,7 @@ class Admin::DecpModule < ActiveRecord::Base
         module_args[module_name] = Hash.new
         if module_model.respond_to?("get_args")
           args = module_model.get_args
-          unless args.nil?
+          if args.respond_to?("has_key?")
             module_args[module_name] = args
           end
         end
@@ -137,7 +137,7 @@ class Admin::DecpModule < ActiveRecord::Base
     if  module_model.respond_to?("get_args")
       ActiveRecord::Base.transaction do
         new_args = module_model.get_args
-        unless new_args.nil?
+        if new_args.respond_to?("has_key?")
           args = new_args
         end
       end

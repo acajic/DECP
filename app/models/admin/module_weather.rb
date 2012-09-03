@@ -1,6 +1,6 @@
 class Admin::ModuleWeather < ActiveRecord::Base
 
- # validates_uniqueness_of :date, :scope => [:city, :country]
+  # validates_uniqueness_of :date, :scope => [:city, :country]
 
   def self.get_args
     args = Hash.new
@@ -40,11 +40,29 @@ class Admin::ModuleWeather < ActiveRecord::Base
 
     attributes = Admin::ModuleWeather.column_names
     records = []
-    weathers.each do |weather|
+
+    unless weathers.has_key?(:date)
+      weathers.each do |weather|
+        record = Admin::ModuleWeather.new()
+
+        record.city=city
+        record.country=country
+
+        weather.each_pair do |attr, value|
+          if attributes.include?(attr)
+            record[attr] = value
+          end
+        end
+
+        records << record
+      end
+    else
+      weather = weathers
       record = Admin::ModuleWeather.new()
 
       record.city=city
       record.country=country
+
       weather.each_pair do |attr, value|
         if attributes.include?(attr)
           record[attr] = value
