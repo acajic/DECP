@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="394506d9-5ce8-4daa-ae17-aeecb164d1da" name="Default" comment="popravljeno da se i description spremi kad se stvara novi modul">
+    <list default="true" id="394506d9-5ce8-4daa-ae17-aeecb164d1da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb" />
     </list>
     <ignored path="DECP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +31,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_form.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="create_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.56285715">
+            <state line="61" column="0" selection-start="2843" selection-end="2843" vertical-scroll-proportion="-9.538462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="7" selection-start="148" selection-end="148" vertical-scroll-proportion="0.30591258">
               <folding />
             </state>
           </provider>
@@ -90,9 +97,9 @@
         <option value="$PROJECT_DIR$/db/migrate/20120903000321_create_admin_module_weathers.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120902230047_create_admin_module_rates.rb" />
         <option value="$PROJECT_DIR$/app/models/admin/decp_module.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -696,7 +703,11 @@
       <created>1346684236931</created>
       <updated>1346684236931</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="confirmation prije stvaranja novog modula">
+      <created>1346684596050</created>
+      <updated>1346684596050</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -758,7 +769,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="popravljeno da se i description spremi kad se stvara novi modul" />
+    <option name="LAST_COMMIT_MESSAGE" value="confirmation prije stvaranja novog modula" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -776,6 +787,7 @@
     <MESSAGE value="gemfile" />
     <MESSAGE value="nesto ispravljene migracije i to" />
     <MESSAGE value="popravljeno da se i description spremi kad se stvara novi modul" />
+    <MESSAGE value="confirmation prije stvaranja novog modula" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -851,13 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="146" selection-end="152" vertical-scroll-proportion="0.30591258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="29" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
@@ -888,7 +893,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.56285715">
+        <state line="61" column="0" selection-start="2843" selection-end="2843" vertical-scroll-proportion="-9.538462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="7" selection-start="148" selection-end="148" vertical-scroll-proportion="0.30591258">
           <folding />
         </state>
       </provider>
