@@ -88,6 +88,7 @@ class Admin::DecpModule < ActiveRecord::Base
         ActiveRecord::Base.connection.execute("DELETE FROM schema_migrations WHERE version = "+self.migration_version)
       end
     rescue Exception => e
+      return
       # do nothing
     end
     destroy
