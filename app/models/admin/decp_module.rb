@@ -88,6 +88,7 @@ class Admin::DecpModule < ActiveRecord::Base
         ActiveRecord::Base.connection.execute("DELETE FROM schema_migrations WHERE version = "+self.migration_version)
       end
     rescue Exception => e
+      Log.create(:admin_decp_module => name, :success => false, :details => "Neuspjelo brisanje tablice: " + e)
       return
       # do nothing
     end

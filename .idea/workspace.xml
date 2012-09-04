@@ -44,7 +44,7 @@
       <file leaf-file-name="decp_module.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="12" selection-start="2715" selection-end="2715" vertical-scroll-proportion="0.516129">
+            <state line="90" column="109" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.516129">
               <folding />
             </state>
           </provider>
@@ -793,7 +793,11 @@
       <created>1346758115508</created>
       <updated>1346758115508</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="proba1">
+      <created>1346758897862</created>
+      <updated>1346758897862</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -913,7 +917,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/models/admin/decp_module.rb</url>
-          <line>93</line>
+          <line>94</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/models/admin/decp_module.rb</url>
@@ -1009,7 +1013,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="12" selection-start="2715" selection-end="2715" vertical-scroll-proportion="0.516129">
+        <state line="90" column="109" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.516129">
           <folding />
         </state>
       </provider>
