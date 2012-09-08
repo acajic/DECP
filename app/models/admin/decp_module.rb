@@ -126,7 +126,7 @@ class Admin::DecpModule < ActiveRecord::Base
     threads = Hash.new
     module_models.each_pair do |module_name, module_model|
       threads[module_name] = Thread.new do
-        details = ""
+
         response = Hash.new
         response[:details] = ""
         response[:success] = true
@@ -134,7 +134,7 @@ class Admin::DecpModule < ActiveRecord::Base
           response = module_model.fetch(module_args[module_name])
         rescue Exception => e
           response[:success] = false
-          response[:details] << "Modul nema implementiranu metodu za dohvat podataka -- " << module_model.name << ".fetch(). "
+          response[:details] << "Modul nema ispravno implementiranu metodu za dohvat podataka -- " << module_model.name << ".fetch(). "
         end
 
         response
