@@ -81,12 +81,13 @@ class Admin::DecpModule < ActiveRecord::Base
 
   def destroy_full
     require "rails/generators/base"
-    #rake_result = %x[rake db:migrate:down VERSION=#{self.migration_version}]
+
     begin
-      ActiveRecord::Base.transaction do
-        ActiveRecord::Base.connection.execute("DROP TABLE admin_module_"+name.pluralize.downcase)
-        ActiveRecord::Base.connection.execute("DELETE FROM schema_migrations WHERE version = "+self.migration_version)
-      end
+      rake_result = %x[rake db:migrate:down VERSION=#{self.migration_version}]
+        #ActiveRecord::Base.transaction do
+        #  ActiveRecord::Base.connection.execute("DROP TABLE admin_module_"+name.pluralize.downcase)
+        #  ActiveRecord::Base.connection.execute("DELETE FROM schema_migrations WHERE version = "+self.migration_version)
+        #end
     rescue Exception => e
       return
       # do nothing

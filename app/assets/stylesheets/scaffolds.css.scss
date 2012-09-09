@@ -6,10 +6,25 @@ body {
   line-height: 18px;
 }
 
+
+
+th
+  {
+  background-color:#96B4E4;
+  color:black;
+}
+
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+}
+
+.fetch_all_link {
+  background-image: url('http://localhost:3000/images/fetch_all.png');
+  background-repeat: no-repeat;
+  background-size: 250px 30px;
+  min-height: 50px;
 }
 
 pre {
@@ -21,7 +36,7 @@ pre {
 a {
   color: #000;
   &:visited {
-    color: #666;
+    color: #333;
   }
   &:hover {
     color: #fff;

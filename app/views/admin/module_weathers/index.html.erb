@@ -1,4 +1,5 @@
-<h1>Listing admin_module_weathers</h1>
+
+<h1>Weather forecasts</h1>
 
 <table>
   <tr>
@@ -6,7 +7,7 @@
     <th>Country</th>
     <th>Date</th>
     <th>Temp Max</th>
-    <th>Temp Min </th>
+    <th>Temp Min</th>
     <th>Wind Speed</th>
     <th>Wind Direction</th>
     <th>Weather Picture</th>
@@ -16,25 +17,25 @@
     <th></th>
   </tr>
 
-<% @admin_module_weathers.each do |admin_module_weather| %>
-  <tr>
-    <td><%= admin_module_weather.city %></td>
-    <td><%= admin_module_weather.country %></td>
-    <td><%= admin_module_weather.date %></td>
-    <td><%= admin_module_weather.tempMaxC %> °C</td>
-    <td><%= admin_module_weather.tempMinC %> °C</td>
-    <td><%= admin_module_weather.windspeedKmph %> km/h</td>
-    <td><%= admin_module_weather.winddirection %></td>
-    <td><%= image_tag admin_module_weather.weatherIconUrl %></td>
-    <td><%= admin_module_weather.weatherDesc %></td>
-    <td><%= link_to 'Show', admin_module_weather %></td>
-    <td><%= link_to 'Edit', edit_admin_module_weather_path(admin_module_weather) %></td>
-    <td><%= link_to 'Destroy', admin_module_weather, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+  <% @admin_module_weathers.each do |admin_module_weather| %>
+      <tr>
+        <td><%= admin_module_weather.city %></td>
+        <td><%= admin_module_weather.country %></td>
+        <td><%= admin_module_weather.date %></td>
+        <td><%= admin_module_weather.tempMaxC %> °C</td>
+        <td><%= admin_module_weather.tempMinC %> °C</td>
+        <td><%= admin_module_weather.windspeedKmph %> km/h</td>
+        <td><%= admin_module_weather.winddirection %></td>
+        <td><%= image_tag admin_module_weather.weatherIconUrl %></td>
+        <td><%= admin_module_weather.weatherDesc %></td>
+        <td><%= link_to 'Show', admin_module_weather %></td>
+        <td><%= link_to 'Edit', edit_admin_module_weather_path(admin_module_weather) %></td>
+        <td><%= link_to 'Destroy', admin_module_weather, confirm: 'Are you sure?', method: :delete %></td>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
 <td><%= link_to "Back to all modules", :controller => "admin/decp_modules", :action => "index" %></td>
 <%= link_to 'New Module weather', new_admin_module_weather_path %>

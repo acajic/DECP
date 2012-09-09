@@ -1,50 +1,57 @@
-<p id="notice"><%= notice %></p>
+<div>
+  <div style="width: 400px; float: left">
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <b>City:</b>
-  <%= @admin_module_weather.city %>
-</p>
+    <p>
+      <b>City:</b>
+      <%= @admin_module_weather.city %>
+    </p>
 
-<p>
-  <b>Country:</b>
-  <%= @admin_module_weather.country %>
-</p>
+    <p>
+      <b>Country:</b>
+      <%= @admin_module_weather.country %>
+    </p>
 
-<p>
-  <b>Date:</b>
-  <%= @admin_module_weather.date %>
-</p>
+    <p>
+      <b>Date:</b>
+      <%= @admin_module_weather.date %>
+    </p>
 
-<p>
-  <b>Temp Max:</b>
-  <%= @admin_module_weather.tempMaxC %> °C
-</p>
+    <p>
+      <b>Temp Max:</b>
+      <%= @admin_module_weather.tempMaxC %> °C
+    </p>
 
-<p>
-  <b>Temp Min:</b>
-  <%= @admin_module_weather.tempMinC %> °C
-</p>
+    <p>
+      <b>Temp Min:</b>
+      <%= @admin_module_weather.tempMinC %> °C
+    </p>
 
-<p>
-  <b>Wind Speed:</b>
-  <%= @admin_module_weather.windspeedKmph %>
-</p>
+    <p>
+      <b>Wind Speed:</b>
+      <%= @admin_module_weather.windspeedKmph %>
+    </p>
 
-<p>
-  <b>Wind Direction:</b>
-  <%= @admin_module_weather.winddirection %>
-</p>
+    <p>
+      <b>Wind Direction:</b>
+      <%= @admin_module_weather.winddirection %>
+    </p>
 
-<p>
-  <b>Weather Picture:</b>
-  <%= image_tag @admin_module_weather.weatherIconUrl%>
-</p>
+    <p>
+      <b>Weather Picture:</b>
+      <%= image_tag @admin_module_weather.weatherIconUrl %>
+    </p>
 
-<p>
-  <b>Weather Description:</b>
-  <%= @admin_module_weather.weatherDesc %>
-</p>
+    <p>
+      <b>Weather Description:</b>
+      <%= @admin_module_weather.weatherDesc %>
+    </p>
 
 
-<%= link_to 'Edit', edit_admin_module_weather_path(@admin_module_weather) %> |
-<%= link_to 'Back', admin_module_weathers_path %>
+    <%= link_to 'Edit', edit_admin_module_weather_path(@admin_module_weather) %> |
+    <%= link_to 'Back', admin_module_weathers_path %>
+  </div>
+
+  <div id="map_canvas" style="width:400px; height:400px; float: left"></div>
+
+</div>
