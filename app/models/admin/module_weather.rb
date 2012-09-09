@@ -41,7 +41,7 @@ class Admin::ModuleWeather < ActiveRecord::Base
     attributes = Admin::ModuleWeather.column_names
     records = []
 
-    unless weathers.has_key?(:date)
+    unless weathers.respond_to?(:has_key?)
       weathers.each do |weather|
         record = Admin::ModuleWeather.new()
 

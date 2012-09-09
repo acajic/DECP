@@ -189,7 +189,7 @@ class Admin::DecpModule < ActiveRecord::Base
       response = module_model.fetch(args)
     rescue Exception => e
       success = false
-      response[:details] << "Modul nema implementiranu metodu za dohvat podataka -- " << module_model.name << ".fetch(). "
+      response[:details] << "Modul nema implementiranu metodu za dohvat podataka -- " << module_model.name << ".fetch(): " << e.to_s << ". "
     end
 
 

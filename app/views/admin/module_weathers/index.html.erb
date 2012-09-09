@@ -25,7 +25,7 @@
         <td><%= admin_module_weather.tempMaxC %> °C</td>
         <td><%= admin_module_weather.tempMinC %> °C</td>
         <td><%= admin_module_weather.windspeedKmph %> km/h</td>
-        <td><%= admin_module_weather.winddirection %></td>
+        <td><%= image_tag("/images/wind_directions/wr-#{admin_module_weather.winddirection}.gif")  %></td>
         <td><%= image_tag admin_module_weather.weatherIconUrl %></td>
         <td><%= admin_module_weather.weatherDesc %></td>
         <td><%= link_to 'Show', admin_module_weather %></td>
