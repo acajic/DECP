@@ -2,29 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="394506d9-5ce8-4daa-ae17-aeecb164d1da" name="Default" comment="proba2">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-E.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-ENE.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-ESE.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-N.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-NE.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-NNE.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-NNW.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-NW.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-S.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-SE.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-SSE.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-SSW.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-SW.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-W.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-WNW.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-WSW.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-animation.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wind_directions/wr-calm.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin/decp_module.rb" afterPath="$PROJECT_DIR$/app/models/admin/decp_module.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin/module_rate.rb" afterPath="$PROJECT_DIR$/app/models/admin/module_rate.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin/module_weather.rb" afterPath="$PROJECT_DIR$/app/models/admin/module_weather.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/module_weathers/index.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/module_weathers/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/decp_modules/index.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/decp_modules/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/decp_modules/new.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/decp_modules/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/module_rates/index.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/module_rates/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/module_weathers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/module_weathers/show.html.erb" />
     </list>
     <ignored path="DECP.iws" />
@@ -44,37 +31,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="decp_module.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="decp_module.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="0" selection-start="5364" selection-end="5364" vertical-scroll-proportion="0.0">
+            <state line="87" column="13" selection-start="2720" selection-end="2750" vertical-scroll-proportion="0.10483871">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="module_weather.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/admin/module_weather.rb">
+      <file leaf-file-name="decp_modules_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="26" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
+            <state line="128" column="49" selection-start="3519" selection-end="3519" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/module_weathers/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/decp_modules/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="98" selection-start="730" selection-end="812" vertical-scroll-proportion="-7.8461537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/module_weathers/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="590" selection-end="590" vertical-scroll-proportion="0.5682451">
+            <state line="24" column="78" selection-start="783" selection-end="800" vertical-scroll-proportion="-7.8461537">
               <folding />
             </state>
           </provider>
@@ -97,22 +75,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/admin/decp_modules/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/admin/decp_modules/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/admin/module_rates/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/admin/module_weathers.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/public/raton.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/admin/module_weathers.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/admin/decp_modules.css.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/admin/module_weathers.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
         <option value="$PROJECT_DIR$/app/views/admin/module_weathers/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin/module_rates/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin/module_weathers/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin/decp_modules/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin/decp_modules/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20120831172434_create_admin_decp_modules.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20120902230047_create_admin_module_rates.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20120903000321_create_admin_module_weathers.rb" />
+        <option value="$PROJECT_DIR$/bendog.html" />
         <option value="$PROJECT_DIR$/app/models/admin/decp_module.rb" />
         <option value="$PROJECT_DIR$/app/models/admin/module_weather.rb" />
-        <option value="$PROJECT_DIR$/app/views/admin/module_weathers/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/admin/module_rate.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb" />
       </list>
     </option>
   </component>
@@ -193,7 +171,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,6 +289,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -341,10 +364,6 @@
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module_weathers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -365,6 +384,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="decp_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -419,27 +442,94 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DECP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="113" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="147" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="133" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="133" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/github" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="139" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="805" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="139" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="807" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="805" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="133" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="131" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -454,9 +544,9 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="options.searchVisible" value="true" />
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -950,7 +1040,11 @@
       <created>1347197029351</created>
       <updated>1347197029351</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="proba2">
+      <created>1347201611569</created>
+      <updated>1347201611569</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -974,24 +1068,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.49675852" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2328125" sideWeight="0.49675852" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28119937" sideWeight="0.640625" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29011345" sideWeight="0.640625" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.359375" sideWeight="0.48055106" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.359375" sideWeight="0.51377636" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.359375" sideWeight="0.49675852" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.365625" sideWeight="0.49675852" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.49675852" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.640625" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1032,7 +1126,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="slikica detalji" />
+    <option name="LAST_COMMIT_MESSAGE" value="proba2" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1060,115 +1154,115 @@
     <MESSAGE value="23:07" />
     <MESSAGE value="popravljeno brisanje migracijskih fajlova" />
     <MESSAGE value="proba1" />
-    <MESSAGE value="proba2" />
     <MESSAGE value="geocoding!" />
     <MESSAGE value="popravljen geocoding" />
     <MESSAGE value="slikica dodana" />
     <MESSAGE value="slikica detalji" />
+    <MESSAGE value="proba2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/admin/decp_module.rb</url>
-          <line>170</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/admin/decp_module.rb</url>
-          <line>183</line>
+          <url>file://$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb</url>
+          <line>17</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/module_weathers_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/decp_modules/create_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="417" selection-end="438" vertical-scroll-proportion="0.41917807" />
+        <state line="46" column="89" selection-start="2296" selection-end="2296" vertical-scroll-proportion="-10.461538" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/admin/module_weathers.js.coffee">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120902230047_create_admin_module_rates.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.13246754" />
+        <state line="164" column="126" selection-start="8536" selection-end="8536" vertical-scroll-proportion="0.5951087" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/admin/decp_modules.css.scss">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120903000321_create_admin_module_weathers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.13246754" />
+        <state line="15" column="123" selection-start="501" selection-end="501" vertical-scroll-proportion="0.39945653" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/admin/module_weathers.html.erb">
+    <entry file="file://$PROJECT_DIR$/bendog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="659" selection-end="659" vertical-scroll-proportion="0.4317549" />
+        <state line="13" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.38368055" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_controller/metal/rescue.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" />
+        <state line="30" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.51428574" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/.gitkeep">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/plugins/.gitkeep">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/.gitkeep">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="206" column="0" selection-start="8090" selection-end="8090" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/admin/module_rate.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="26" selection-start="488" selection-end="488" vertical-scroll-proportion="-1.251948" />
+        <state line="56" column="74" selection-start="1545" selection-end="1545" vertical-scroll-proportion="2.8417912" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/admin/module_weather.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="20" selection-start="1688" selection-end="1688" vertical-scroll-proportion="2.8333333" />
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_controller/metal/mime_responds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="270" column="0" selection-start="9645" selection-end="9645" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/decp_modules/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="78" selection-start="783" selection-end="800" vertical-scroll-proportion="-7.8461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="361" selection-end="366" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120830122323_initial_migration.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/decp_modules_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.66233766">
+        <state line="128" column="49" selection-start="3519" selection-end="3519" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin/module_weather.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120831172434_create_admin_decp_modules.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.50136983">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="58" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.13709678">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/admin/decp_module.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="0" selection-start="5364" selection-end="5364" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/module_weathers/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="98" selection-start="730" selection-end="812" vertical-scroll-proportion="-7.8461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/module_weathers/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="590" selection-end="590" vertical-scroll-proportion="0.5682451">
+        <state line="87" column="13" selection-start="2720" selection-end="2750" vertical-scroll-proportion="0.10483871">
           <folding />
         </state>
       </provider>

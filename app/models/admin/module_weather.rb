@@ -6,7 +6,7 @@ class Admin::ModuleWeather < ActiveRecord::Base
     args = Hash.new
     args[:city] = "Zagreb"
     args[:country] = "Croatia"
-    args[:num_of_days] = 1
+    args[:num_of_days] = 5
     args[:key] = "1a75ab32de233416120209"
 
     args
@@ -15,6 +15,7 @@ class Admin::ModuleWeather < ActiveRecord::Base
   def self.fetch(args)
     require 'net/http'
 
+    # location = "Zagreb, Croatia"
     location = args[:city] << "," << args[:country]
 
 
@@ -25,9 +26,10 @@ class Admin::ModuleWeather < ActiveRecord::Base
     }
 
     xml_content = res.body
-    #data = XmlSimple.xml_in(xml_content,{:ForceArray => false})
 
+    # pretvorba iz xml-a u Hash
     report = Hash.from_xml(xml_content).with_indifferent_access
+    # with indifferent access znači da je svejedno hoće li ključ biti dohvaćen kao string ("key") ili kao simbol (:key)
 
     data = report[:data]
 
@@ -41,7 +43,24 @@ class Admin::ModuleWeather < ActiveRecord::Base
     attributes = Admin::ModuleWeather.column_names
     records = []
 
-    unless weathers.respond_to?(:has_key?)
+    # ovisno o tome je li zatražena prognoza za 1 ili više dana, dobiveni podaci mogu biti Hash ili Array
+    if weathers.respond_to?(:has_key?)
+      # ako je Hash
+      weather = weathers
+      record = Admin::ModuleWeather.new()
+
+      record.city=city
+      record.country=country
+
+      weather.each_pair do |attr, value|
+        if attributes.include?(attr)
+          record[attr] = value
+        end
+      end
+
+      records << record
+    else
+      # ako je Array
       weathers.each do |weather|
         record = Admin::ModuleWeather.new()
 
@@ -56,20 +75,6 @@ class Admin::ModuleWeather < ActiveRecord::Base
 
         records << record
       end
-    else
-      weather = weathers
-      record = Admin::ModuleWeather.new()
-
-      record.city=city
-      record.country=country
-
-      weather.each_pair do |attr, value|
-        if attributes.include?(attr)
-          record[attr] = value
-        end
-      end
-
-      records << record
     end
 
     return_obj = Hash.new

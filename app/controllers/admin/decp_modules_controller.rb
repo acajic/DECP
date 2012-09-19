@@ -91,7 +91,7 @@ class Admin::DecpModulesController < ApplicationController
 
     gen = Rails::Generators::Base.new
 
-    command = "rails generate scaffold Admin::Module" + @admin_decp_module.name.camelcase + " "
+    command = "rails generate scaffold Admin::Module"+@admin_decp_module.name.camelcase + " "
 
     field_names = params[:fieldname]
     field_names.each_pair do |k, field_name|
@@ -102,7 +102,9 @@ class Admin::DecpModulesController < ApplicationController
       command += field_name + ":" +field_type + " "
     end
 
-    gen.run command
+    command += "--no-stylesheets"
+
+    gen.run(command)
 
     Admin::DecpModule.create_full(@admin_decp_module)
 
@@ -114,17 +116,17 @@ class Admin::DecpModulesController < ApplicationController
 
   def fetch
     unless params[:id].nil?
-      return fetch_individual(params[:id])
+      return fetch_individual(params)
     end
 
-    Admin::DecpModule.fetch
+    Admin::DecpModule.fetch(params)
 
     redirect_to(url_for(:action => "index"), {:notice => "Data retrieval complete!"})
   end
 
-  def fetch_individual(id)
+  def fetch_individual(params)
     # modules = Dir.glob Rails.root.join("app", "models", "admin", "*")
-    Admin::DecpModule.find_by_id(id).fetch
+    Admin::DecpModule.find_by_id(params[:id]).fetch(params)
 
     redirect_to(url_for(:action => "index"), {:notice => "Data retrieval complete!"})
     #    redirect_to action: "index", :notice => "Data retrieval complete!"

@@ -17,7 +17,8 @@
 
   <% @admin_module_rates.each do |admin_module_rate| %>
       <tr>
-        <td><%= admin_module_rate.timestamp %></td>
+        <% require 'date' %>
+        <td><%= Time.at(admin_module_rate.timestamp).to_datetime.strftime("%Y-%m-%d %H:%M:%S") %></td>
         <td><%= admin_module_rate.CHF %></td>
         <td><%= admin_module_rate.CNY %></td>
         <td><%= admin_module_rate.EUR %></td>

@@ -1,19 +1,11 @@
 class Admin::ModuleRate < ActiveRecord::Base
+  # novi zapis neće moći biti zapisan u tablicu ako već postoji zapis koji ima isti 'timestamp'
   validates_uniqueness_of :timestamp
-
-  def self.save_multi(rates)
-    ActiveRecord::Base.transaction do
-      rates.each do |rate|
-        rate.save
-      end
-    end
-  end
-
 
   def self.get_args
     #params = Hash.new
     #params[:from_date] = "2012-08-12"
-    #params[:to_date] = "2012-08-14"
+    #params[:to_date] = "2012-08-16"
 
     #params
   end
@@ -53,13 +45,21 @@ class Admin::ModuleRate < ActiveRecord::Base
 
       json_content = res.body
 
-      report = ActiveSupport::JSON.decode json_content
+      # dobijemo Hash iz JSON-a
+      report = ActiveSupport::JSON.decode(json_content)
 
       init_hash = report["rates"]
 
       init_hash["timestamp"] = report["timestamp"];
 
-      rates << Admin::ModuleRate.new(init_hash)
+      rate = Admin::ModuleRate.new()
+      rate.attributes.each_key do |attribute|
+        # sve iz dobivenog Hash-a što može potrpat u bazu, to će i potrpat
+        if init_hash.has_key?(attribute)
+          rate[attribute] = init_hash[attribute]
+        end
+      end
+      rates << rate
     end
 
     return_obj = Hash.new
