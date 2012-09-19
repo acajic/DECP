@@ -1,33 +1,43 @@
-<h1>Listing logs</h1>
+<div id="wrapper">
 
-<%= link_to "Back to modules", :controller => "admin/decp_modules", :action => "index" %>
+  <h1>Listing logs</h1>
 
-<table>
-  <tr>
-    <th>Admin decp module</th>
-    <th>Success</th>
-    <th>Details</th>
-    <th>Timestamp</th>
-    <th>Details</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <%= link_to "Back to modules", :controller => "admin/decp_modules", :action => "index" %>
 
-<% @logs.each do |log| %>
-  <tr>
-    <td><%= log.admin_decp_module_id %></td>
-    <td><%= log.success %></td>
-    <td><%= log.details %></td>
-    <td><%= log.created_at %></td>
-    <td><%= link_to 'Show', log %></td>
-    <td><%= link_to 'Edit', edit_log_path(log) %></td>
-    <td><%= link_to 'Destroy', log, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+  <div id="forma">
+    <table>
+      <tr>
+        <th>Admin decp module</th>
+        <th>Success</th>
+        <th>Details</th>
+        <th>Timestamp</th>
+        <th>Details</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
 
-<br />
+      <% @logs.each do |log| %>
+          <tr>
+            <td><%= log.admin_decp_module_id %></td>
+            <td><%= log.success %></td>
+            <td><%= log.details %></td>
+            <td><%= log.created_at %></td>
+            <td><%= link_to 'Show', log %></td>
+            <td><%= link_to 'Edit', edit_log_path(log) %></td>
+            <td><%= link_to 'Destroy', log, confirm: 'Are you sure?', method: :delete %></td>
+          </tr>
+      <% end %>
+    </table>
+
+    <br/>
 
 
-<%= link_to 'New Log', new_log_path %>
+    <%= link_to 'New Log', new_log_path %>
+  </div>
+</div>
+
+
+<div id="footer">
+  Domagoj Čajić | 2012
+</div>

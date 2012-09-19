@@ -1,84 +1,36 @@
-body {
-  background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-}
+body {background:#7eaff4 url('../images/BG.png') 0px 0px repeat-x;}
 
+h1 {color:#222; font-size:24px; text-align:center; margin-bottom:35px; margin-top:20px;}
 
+a {margin-right:5px; font-weight:bold; text-decoration:none; color:#06C;}
 
-th
-  {
-  background-color:#96B4E4;
-  color:black;
-}
+a:hover {text-decoration:underline}
 
-p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-}
+#header{background:#000; height:50px; }
 
-.fetch_all_link {
-  background-image: url('/images/fetch_all.png');
-  background-repeat: no-repeat;
-  background-size: 250px 30px;
-  min-height: 50px;
-}
+#wrapper{ width:900px; background-color:#FFF; margin-left:auto; margin-right:auto; font-family:Trebuchet MS, sans-serif; font-size:14px; line-height:20px; padding:10px;}
 
-pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
-}
+#wrapper2{ width:980px; background-color:#FFF; margin-left:auto; margin-right:auto; font-family:Trebuchet MS, sans-serif; font-size:14px; line-height:20px; padding:10px;}
 
-a {
-  color: #000;
-  &:visited {
-    color: #333;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
-}
+#wrapper3{ width:940px; height: 600px; background-color:#FFF; margin-left:auto; margin-right:auto; font-family:Trebuchet MS, sans-serif; font-size:14px; line-height:20px; padding:10px;}
 
-div {
-  &.field, &.actions {
-    margin-bottom: 10px;
-  }
-}
+#container{ width:880px; background-color:#FFF; font-family:Trebuchet MS, sans-serif; font-size:14px; line-height:20px; padding:10px; float:left;}
 
-#notice {
-  color: green;
-}
+#footer{ width:900px; height:50px; padding:10px; text-align:center; vertical-allign:center; background-color:#000; color:#FFF; line-height:40px; margin-left:auto; margin-right:auto;}
 
-.field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
+#footer2{ width:980px; height:50px; padding:10px; text-align:center; vertical-allign:center; background-color:#000; color:#FFF; line-height:40px; margin-left:auto; margin-right:auto;}
 
-#error_explanation {
-  width: 450px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-  h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px;
-    margin-bottom: 0px;
-    background-color: #c00;
-    color: #fff;
-  }
-  ul li {
-    font-size: 12px;
-    list-style: square;
-  }
-}
+#footer3{ width:940px; height:50px; padding:10px; text-align:center; vertical-allign:center; background-color:#000; color:#FFF; line-height:40px; margin-left:auto; margin-right:auto;}
+
+#forma {text-align:left;  width:600px; margin-left:auto; margin-right:auto; margin-top:30px; background-color:#f1f2f2; padding:20px; margin-bottom: 100px; border:1px solid #BBB;}
+
+#forma2 {text-align:left;  width:700px; margin-left:auto; margin-right:auto; margin-top:30px; background-color:#f1f2f2; padding:20px; margin-bottom: 100px; border:1px solid #BBB;}
+
+.field {margin-bottom:15px;}
+.actions {margin-bottom:15px;}
+
+form input[type=text]{width:210px; height:25px; line-height:25px; border:1px solid #444;  margin-right: 15px;}
+form input[type=text]:focus,form textarea:focus{background:#eff8fd;}
+
+textarea{line-height:25px; border:1px solid #444;  margin-right: 15px;}
+textarea:focus{background:#eff8fd;}

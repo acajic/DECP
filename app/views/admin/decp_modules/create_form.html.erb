@@ -13,52 +13,64 @@
     }
 </script>
 
-<h1>Creating database table: admin_module_<%= @admin_decp_module.name.pluralize %></h1>
+<div id="wrapper">
 
-<ul>
-  <li>Fields specified here will form the initial table for this module.</li>
-  <li>They will also be included in all generated views of the module.</li>
-  <li>Afterwards, these fields can be modified, deleted and new ones can be added but the views will require manual corrections</li>
-</ul>
+  <h1>Creating database table: admin_module_<%= @admin_decp_module.name.pluralize %></h1>
 
+  <ul>
+    <li>Fields specified here will form the initial table for this module.</li>
+    <li>They will also be included in all generated views of the module.</li>
+    <li>Afterwards, these fields can be modified, deleted and new ones can be added but the views will require manual
+      corrections
+    </li>
+  </ul>
 
-<%= form_tag :action => "create_form" do %>
-    <% count = 0 %>
+  <div id="forma">
+    <%= form_tag :action => "create_form" do %>
+        <% count = 0 %>
 
-    <div class="field" id="field<%= count+=1 %>">
-      <%= text_field("show_field", count, :value => "id", :readonly => true) %>
-      <%= select_tag("show_select", options_for_select(@data_types, :selected => "integer"), :disabled => true) %>
-      <%= button_to_function("+", "expand(#{count})", :id => "button_expand#{count}") %>
-    </div>
-
-    <% 100.times do %>
-        <div class="field" id="field<%= count+=1 %>" hidden="true">
-          <%= text_field("fieldname", count) %>
-          <%= select("fieldtype", count, options_for_select(@data_types, :selected => "string")) %>
+        <div class="field" id="field<%= count+=1 %>">
+          <%= text_field("show_field", count, :value => "id", :readonly => true) %>
+          <%= select_tag("show_select", options_for_select(@data_types, :selected => "integer"), :disabled => true) %>
           <%= button_to_function("+", "expand(#{count})", :id => "button_expand#{count}") %>
-          <%= button_to_function("-", "collapse(#{count})", :id => "button_collapse#{count}") %>
         </div>
+
+        <% 100.times do %>
+            <div class="field" id="field<%= count+=1 %>" hidden="true">
+              <%= text_field("fieldname", count) %>
+              <%= select("fieldtype", count, options_for_select(@data_types, :selected => "string")) %>
+              <%= button_to_function("+", "expand(#{count})", :id => "button_expand#{count}") %>
+              <%= button_to_function("-", "collapse(#{count})", :id => "button_collapse#{count}") %>
+            </div>
+        <% end %>
+
+        <div hidden="true">
+          <%= text_field(:admin_decp_module, :id, :value => @admin_decp_module.id) %>
+          <%= text_field(:admin_decp_module, :name, :value => @admin_decp_module.name) %>
+          <%= text_field(:admin_decp_module, :description, :value => @admin_decp_module.description) %>
+          <%= text_field(:admin_decp_module, :active, :value => @admin_decp_module.active) %>
+        </div>
+
+
+        <div class="field" id="field<%= count+=1 %>">
+          <%= text_field("show_field", count, :value => "created_at", :readonly => true) %>
+          <%= select_tag("show_select", options_for_select(@data_types, :selected => "datetime"), :disabled => true) %>
+        </div>
+
+        <div class="field" id="field<%= count+=1 %>">
+          <%= text_field("show_field", count, :value => "updated_at", :readonly => true) %>
+          <%= select_tag("show_select", options_for_select(@data_types, :selected => "datetime"), :disabled => true) %>
+        </div>
+
+
+        <%= submit_tag('Cancel', :onclick => "document.forms[0].action = 'index';", :notice => "Success") %>
+        <%= submit_tag("Finish", :confirm => 'New module will be created along with database table and several html files. Are you sure? (Operation could take up to 30 seconds to complete)') %>
     <% end %>
 
-    <div hidden="true">
-      <%= text_field(:admin_decp_module, :id, :value => @admin_decp_module.id) %>
-      <%= text_field(:admin_decp_module, :name, :value => @admin_decp_module.name) %>
-      <%= text_field(:admin_decp_module, :description, :value => @admin_decp_module.description) %>
-      <%= text_field(:admin_decp_module, :active, :value => @admin_decp_module.active) %>
-    </div>
+  </div>
 
+</div>
 
-    <div class="field" id="field<%= count+=1 %>">
-      <%= text_field("show_field", count, :value => "created_at", :readonly => true) %>
-      <%= select_tag("show_select", options_for_select(@data_types, :selected => "datetime"), :disabled => true) %>
-    </div>
-
-    <div class="field" id="field<%= count+=1 %>">
-      <%= text_field("show_field", count, :value => "updated_at", :readonly => true) %>
-      <%= select_tag("show_select", options_for_select(@data_types, :selected => "datetime"), :disabled => true) %>
-    </div>
-
-
-    <%= submit_tag('Cancel', :onclick => "document.forms[0].action = 'index';", :notice =>"Success") %>
-    <%= submit_tag("Finish", :confirm => 'New module will be created along with database table and several html files. Are you sure? (Operation could take up to 30 seconds to complete)') %>
-<% end %>
+<div id="footer">
+  Domagoj Čajić | 2012
+</div>

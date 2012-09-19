@@ -1,57 +1,65 @@
-<div>
-  <div style="width: 400px; float: left">
-    <p id="notice"><%= notice %></p>
+<div id="wrapper3">
+  <div>
+    <div style="width:278px; height:480px; float:left; padding:10px; background-color:#f1f2f2; border:1px solid #BBB;">
 
-    <p>
-      <b>City:</b>
-      <%= @admin_module_weather.city %>
-    </p>
+      <p id="notice"><%= notice %></p>
 
-    <p>
-      <b>Country:</b>
-      <%= @admin_module_weather.country %>
-    </p>
+      <p>
+        <b>City:</b>
+        <%= @admin_module_weather.city %>
+      </p>
 
-    <p>
-      <b>Date:</b>
-      <%= @admin_module_weather.date %>
-    </p>
+      <p>
+        <b>Country:</b>
+        <%= @admin_module_weather.country %>
+      </p>
 
-    <p>
-      <b>Temp Max:</b>
-      <%= @admin_module_weather.tempMaxC %> °C
-    </p>
+      <p>
+        <b>Date:</b>
+        <%= @admin_module_weather.date %>
+      </p>
 
-    <p>
-      <b>Temp Min:</b>
-      <%= @admin_module_weather.tempMinC %> °C
-    </p>
+      <p>
+        <b>Temp Max:</b>
+        <%= @admin_module_weather.tempMaxC %> °C
+      </p>
 
-    <p>
-      <b>Wind Speed:</b>
-      <%= @admin_module_weather.windspeedKmph %> km/h
-    </p>
+      <p>
+        <b>Temp Min:</b>
+        <%= @admin_module_weather.tempMinC %> °C
+      </p>
 
-    <p>
-      <b>Wind Direction:</b>
-      <%= image_tag("/images/wind_directions/wr-#{@admin_module_weather.winddirection}.gif") %>
-    </p>
+      <p>
+        <b>Wind Speed:</b>
+        <%= @admin_module_weather.windspeedKmph %> km/h
+      </p>
 
-    <p>
-      <b>Weather Picture:</b>
-      <%= image_tag @admin_module_weather.weatherIconUrl %>
-    </p>
+      <p>
+        <b>Wind Direction:</b>
+        <%= image_tag("/images/wind_directions/wr-#{@admin_module_weather.winddirection}.gif") %>
+      </p>
 
-    <p>
-      <b>Weather Description:</b>
-      <%= @admin_module_weather.weatherDesc %>
-    </p>
+      <p>
+        <b>Weather Picture:</b>
+        <%= image_tag @admin_module_weather.weatherIconUrl %>
+      </p>
+
+      <p>
+        <b>Weather Description:</b>
+        <%= @admin_module_weather.weatherDesc %>
+      </p>
 
 
-    <%= link_to 'Edit', edit_admin_module_weather_path(@admin_module_weather) %> |
-    <%= link_to 'Back', admin_module_weathers_path %>
+      <%= link_to 'Edit', edit_admin_module_weather_path(@admin_module_weather) %> |
+      <%= link_to 'Back', admin_module_weathers_path %>
+    </div>
+
+    <div id="map_canvas" style="width:598px; height:500px; float: left; boder:solid 1px #BBB;"></div>
+
   </div>
 
-  <div id="map_canvas" style="width:400px; height:400px; float: left"></div>
+</div>
 
+<div id="footer2">
+  Domagoj Čajić | 2012
 </div>

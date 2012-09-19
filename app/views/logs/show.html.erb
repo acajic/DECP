@@ -1,20 +1,30 @@
-<p id="notice"><%= notice %></p>
+<div id="wrapper">
 
-<p>
-  <b>Admin decp module:</b>
-  <%= @log.admin_decp_module_id %>
-</p>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Success:</b>
-  <%= @log.success %>
-</p>
+  <div id="forma">
+    <p>
+      <b>Admin decp module:</b>
+      <%= @log.admin_decp_module_id %>
+    </p>
 
-<p>
-  <b>Details:</b>
-  <%= @log.details %>
-</p>
+    <p>
+      <b>Success:</b>
+      <%= @log.success %>
+    </p>
+
+    <p>
+      <b>Details:</b>
+      <%= @log.details %>
+    </p>
 
 
-<%= link_to 'Edit', edit_log_path(@log) %> |
-<%= link_to 'Back', logs_path %>
+    <%= link_to 'Edit', edit_log_path(@log) %> |
+    <%= link_to 'Back', logs_path %>
+  </div>
+</div>
+
+
+<div id="footer">
+  Domagoj Čajić | 2012
+</div>
